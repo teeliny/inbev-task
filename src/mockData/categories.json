@@ -1,0 +1,273 @@
+{
+  "tracks": {
+    "data": [
+      {
+        "id": 1474353002,
+        "title": "Mood (feat. Buju)",
+        "title_short": "Mood (feat. Buju)",
+        "title_version": "",
+        "link": "https:\/\/www.deezer.com\/track\/1474353002",
+        "duration": 209,
+        "rank": 846542,
+        "explicit_lyrics": false,
+        "explicit_content_lyrics": 0,
+        "explicit_content_cover": 0,
+        "preview": "https:\/\/cdns-preview-4.dzcdn.net\/stream\/c-4970606241f66c86c93887fae40984da-3.mp3",
+        "md5_image": "ad33274548de3455303618bb650b6d86",
+        "position": 1,
+        "artist": {
+          "id": 3933641,
+          "name": "Wizkid",
+          "link": "https:\/\/www.deezer.com\/artist\/3933641",
+          "picture": "https:\/\/api.deezer.com\/artist\/3933641\/image",
+          "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/56x56-000000-80-0-0.jpg",
+          "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/250x250-000000-80-0-0.jpg",
+          "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/500x500-000000-80-0-0.jpg",
+          "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/1000x1000-000000-80-0-0.jpg",
+          "radio": true,
+          "tracklist": "https:\/\/api.deezer.com\/artist\/3933641\/top?limit=50",
+          "type": "artist"
+        },
+        "album": {
+          "id": 254027212,
+          "title": "Made In Lagos: Deluxe Edition",
+          "cover": "https:\/\/api.deezer.com\/album\/254027212\/image",
+          "cover_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/56x56-000000-80-0-0.jpg",
+          "cover_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/250x250-000000-80-0-0.jpg",
+          "cover_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/500x500-000000-80-0-0.jpg",
+          "cover_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/1000x1000-000000-80-0-0.jpg",
+          "md5_image": "ad33274548de3455303618bb650b6d86",
+          "tracklist": "https:\/\/api.deezer.com\/album\/254027212\/tracks",
+          "type": "album"
+        },
+        "type": "track"
+      },
+      {
+        "id": 1474352992,
+        "title": "Anoti",
+        "title_short": "Anoti",
+        "title_version": "",
+        "link": "https:\/\/www.deezer.com\/track\/1474352992",
+        "duration": 181,
+        "rank": 760646,
+        "explicit_lyrics": false,
+        "explicit_content_lyrics": 0,
+        "explicit_content_cover": 0,
+        "preview": "https:\/\/cdns-preview-8.dzcdn.net\/stream\/c-84076d8e6267c56d1dbb3b2323f4ab82-3.mp3",
+        "md5_image": "ad33274548de3455303618bb650b6d86",
+        "position": 2,
+        "artist": {
+          "id": 3933641,
+          "name": "Wizkid",
+          "link": "https:\/\/www.deezer.com\/artist\/3933641",
+          "picture": "https:\/\/api.deezer.com\/artist\/3933641\/image",
+          "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/56x56-000000-80-0-0.jpg",
+          "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/250x250-000000-80-0-0.jpg",
+          "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/500x500-000000-80-0-0.jpg",
+          "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/1000x1000-000000-80-0-0.jpg",
+          "radio": true,
+          "tracklist": "https:\/\/api.deezer.com\/artist\/3933641\/top?limit=50",
+          "type": "artist"
+        },
+        "album": {
+          "id": 254027212,
+          "title": "Made In Lagos: Deluxe Edition",
+          "cover": "https:\/\/api.deezer.com\/album\/254027212\/image",
+          "cover_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/56x56-000000-80-0-0.jpg",
+          "cover_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/250x250-000000-80-0-0.jpg",
+          "cover_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/500x500-000000-80-0-0.jpg",
+          "cover_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/ad33274548de3455303618bb650b6d86\/1000x1000-000000-80-0-0.jpg",
+          "md5_image": "ad33274548de3455303618bb650b6d86",
+          "tracklist": "https:\/\/api.deezer.com\/album\/254027212\/tracks",
+          "type": "album"
+        },
+        "type": "track"
+      }
+    ],
+    "total": 2
+  },
+  "albums": {
+    "data": [
+      {
+        "id": 278968652,
+        "title": "Fighting Demons",
+        "link": "https:\/\/www.deezer.com\/album\/278968652",
+        "cover": "https:\/\/api.deezer.com\/album\/278968652\/image",
+        "cover_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/e45718bdca0434c44e61065b6a6b4378\/56x56-000000-80-0-0.jpg",
+        "cover_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/e45718bdca0434c44e61065b6a6b4378\/250x250-000000-80-0-0.jpg",
+        "cover_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/e45718bdca0434c44e61065b6a6b4378\/500x500-000000-80-0-0.jpg",
+        "cover_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/e45718bdca0434c44e61065b6a6b4378\/1000x1000-000000-80-0-0.jpg",
+        "md5_image": "e45718bdca0434c44e61065b6a6b4378",
+        "record_type": "album",
+        "tracklist": "https:\/\/api.deezer.com\/album\/278968652\/tracks",
+        "explicit_lyrics": true,
+        "position": 1,
+        "artist": {
+          "id": 14456487,
+          "name": "Juice Wrld",
+          "link": "https:\/\/www.deezer.com\/artist\/14456487",
+          "picture": "https:\/\/api.deezer.com\/artist\/14456487\/image",
+          "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/32458864045f1087652738e10bcdf74b\/56x56-000000-80-0-0.jpg",
+          "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/32458864045f1087652738e10bcdf74b\/250x250-000000-80-0-0.jpg",
+          "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/32458864045f1087652738e10bcdf74b\/500x500-000000-80-0-0.jpg",
+          "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/32458864045f1087652738e10bcdf74b\/1000x1000-000000-80-0-0.jpg",
+          "radio": true,
+          "tracklist": "https:\/\/api.deezer.com\/artist\/14456487\/top?limit=50",
+          "type": "artist"
+        },
+        "type": "album"
+      },
+      {
+        "id": 271179132,
+        "title": "The Second Wave",
+        "link": "https:\/\/www.deezer.com\/album\/271179132",
+        "cover": "https:\/\/api.deezer.com\/album\/271179132\/image",
+        "cover_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/981eafae46404d781e28a199b350176a\/56x56-000000-80-0-0.jpg",
+        "cover_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/981eafae46404d781e28a199b350176a\/250x250-000000-80-0-0.jpg",
+        "cover_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/981eafae46404d781e28a199b350176a\/500x500-000000-80-0-0.jpg",
+        "cover_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/cover\/981eafae46404d781e28a199b350176a\/1000x1000-000000-80-0-0.jpg",
+        "md5_image": "981eafae46404d781e28a199b350176a",
+        "record_type": "ep",
+        "tracklist": "https:\/\/api.deezer.com\/album\/271179132\/tracks",
+        "explicit_lyrics": false,
+        "position": 2,
+        "artist": {
+          "id": 365797,
+          "name": "Ruger",
+          "link": "https:\/\/www.deezer.com\/artist\/365797",
+          "picture": "https:\/\/api.deezer.com\/artist\/365797\/image",
+          "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/981eafae46404d781e28a199b350176a\/56x56-000000-80-0-0.jpg",
+          "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/981eafae46404d781e28a199b350176a\/250x250-000000-80-0-0.jpg",
+          "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/981eafae46404d781e28a199b350176a\/500x500-000000-80-0-0.jpg",
+          "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/981eafae46404d781e28a199b350176a\/1000x1000-000000-80-0-0.jpg",
+          "radio": true,
+          "tracklist": "https:\/\/api.deezer.com\/artist\/365797\/top?limit=50",
+          "type": "artist"
+        },
+        "type": "album"
+      }
+    ],
+    "total": 2
+  },
+  "artists": {
+    "data": [
+      {
+        "id": 3933641,
+        "name": "Wizkid",
+        "link": "https:\/\/www.deezer.com\/artist\/3933641",
+        "picture": "https:\/\/api.deezer.com\/artist\/3933641\/image",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/0a5d34bab78b51067698dd51767154aa\/1000x1000-000000-80-0-0.jpg",
+        "radio": true,
+        "tracklist": "https:\/\/api.deezer.com\/artist\/3933641\/top?limit=50",
+        "position": 1,
+        "type": "artist"
+      },
+      {
+        "id": 230,
+        "name": "Kanye West",
+        "link": "https:\/\/www.deezer.com\/artist\/230",
+        "picture": "https:\/\/api.deezer.com\/artist\/230\/image",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/bb76c2ee3b068726ab4c37b0aabdb57a\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/bb76c2ee3b068726ab4c37b0aabdb57a\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/bb76c2ee3b068726ab4c37b0aabdb57a\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/artist\/bb76c2ee3b068726ab4c37b0aabdb57a\/1000x1000-000000-80-0-0.jpg",
+        "radio": true,
+        "tracklist": "https:\/\/api.deezer.com\/artist\/230\/top?limit=50",
+        "position": 2,
+        "type": "artist"
+      }
+    ],
+    "total": 2
+  },
+  "playlists": {
+    "data": [
+      {
+        "id": 3325684262,
+        "title": "Naija Heat",
+        "public": true,
+        "nb_tracks": 50,
+        "link": "https:\/\/www.deezer.com\/playlist\/3325684262",
+        "picture": "https:\/\/api.deezer.com\/playlist\/3325684262\/image",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/77de89c6e8831b5b6fd1bee6b665c56e\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/77de89c6e8831b5b6fd1bee6b665c56e\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/77de89c6e8831b5b6fd1bee6b665c56e\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/77de89c6e8831b5b6fd1bee6b665c56e\/1000x1000-000000-80-0-0.jpg",
+        "checksum": "bc0f2ccd7f839bc345a68c3923abe828",
+        "tracklist": "https:\/\/api.deezer.com\/playlist\/3325684262\/tracks",
+        "creation_date": "2017-07-04 11:22:23",
+        "md5_image": "77de89c6e8831b5b6fd1bee6b665c56e",
+        "picture_type": "playlist",
+        "user": {
+          "id": 3115990644,
+          "name": "Sot - Deezer Afro Editor",
+          "tracklist": "https:\/\/api.deezer.com\/user\/3115990644\/flow",
+          "type": "user"
+        },
+        "type": "playlist"
+      },
+      {
+        "id": 8453808382,
+        "title": "Hits of Nigeria",
+        "public": true,
+        "nb_tracks": 50,
+        "link": "https:\/\/www.deezer.com\/playlist\/8453808382",
+        "picture": "https:\/\/api.deezer.com\/playlist\/8453808382\/image",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/7c1cfd2a65e64b436a65fc23beef7cc8\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/7c1cfd2a65e64b436a65fc23beef7cc8\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/7c1cfd2a65e64b436a65fc23beef7cc8\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/playlist\/7c1cfd2a65e64b436a65fc23beef7cc8\/1000x1000-000000-80-0-0.jpg",
+        "checksum": "6f02c1398f7929a87c582c8e9d9ac8bd",
+        "tracklist": "https:\/\/api.deezer.com\/playlist\/8453808382\/tracks",
+        "creation_date": "2020-12-07 12:37:41",
+        "md5_image": "7c1cfd2a65e64b436a65fc23beef7cc8",
+        "picture_type": "playlist",
+        "user": {
+          "id": 304252685,
+          "name": "Sot - Deezer South Africa Editor",
+          "tracklist": "https:\/\/api.deezer.com\/user\/304252685\/flow",
+          "type": "user"
+        },
+        "type": "playlist"
+      }
+    ],
+    "total": 2
+  },
+  "podcasts": {
+    "data": [
+      {
+        "id": 2505762,
+        "title": "Apostle Joshua Selman",
+        "description": "Welcome to the Official Page of Apostle Joshua Selman Who is the Founder of Koinonia (Eternity Network International) , Zaria , Kaduna State , Nigeria.  KOINONIA is a weekly programme organised by the Eternity Network International where people come to experience WORSHIP, WORD, MIRACLES AND LOVE, experience true intimacy with the Holy spirit and learn to be with Him, be like Him and represent Him  Intimacy, partnership, fellowship, intercourse, and participation with the Holy spirit\u2026we represent the fullness of God\u2019s life on earth.  Mission Of Apostle Joshua Selman At Koinonia",
+        "available": true,
+        "fans": 582,
+        "link": "https:\/\/www.deezer.com\/show\/2505762",
+        "share": "https:\/\/www.deezer.com\/show\/2505762?utm_source=deezer&utm_content=show-2505762&utm_term=0_1639763954&utm_medium=web",
+        "picture": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/965fc7cf44bb26c7894be7c90669d0b0\/180x180-000000-80-0-0.jpg",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/965fc7cf44bb26c7894be7c90669d0b0\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/965fc7cf44bb26c7894be7c90669d0b0\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/965fc7cf44bb26c7894be7c90669d0b0\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/965fc7cf44bb26c7894be7c90669d0b0\/1000x1000-000000-80-0-0.jpg",
+        "type": "podcast"
+      },
+      {
+        "id": 2272152,
+        "title": "I Said What I Said",
+        "description": "The African millennial experience, according to FK and Jollz.",
+        "available": true,
+        "fans": 368,
+        "link": "https:\/\/www.deezer.com\/show\/2272152",
+        "share": "https:\/\/www.deezer.com\/show\/2272152?utm_source=deezer&utm_content=show-2272152&utm_term=0_1639763954&utm_medium=web",
+        "picture": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/9b2c5aa603be4415428c49fc40af17b1\/180x180-000000-80-0-0.jpg",
+        "picture_small": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/9b2c5aa603be4415428c49fc40af17b1\/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/9b2c5aa603be4415428c49fc40af17b1\/250x250-000000-80-0-0.jpg",
+        "picture_big": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/9b2c5aa603be4415428c49fc40af17b1\/500x500-000000-80-0-0.jpg",
+        "picture_xl": "https:\/\/e-cdns-images.dzcdn.net\/images\/talk\/9b2c5aa603be4415428c49fc40af17b1\/1000x1000-000000-80-0-0.jpg",
+        "type": "podcast"
+      }
+    ],
+    "total": 2
+  }
+}
