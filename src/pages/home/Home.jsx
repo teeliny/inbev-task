@@ -7,7 +7,7 @@ function Home() {
   return (
     <HomeWrapper>
       <SideBar />
-      <div>
+      <div className='content'>
         <Header />
         <p>InBev React Test</p>
       </div>
@@ -19,4 +19,14 @@ export default Home;
 
 const HomeWrapper = styled.div`
   display: flex;
+
+  .content {
+    width: calc(100% - 4rem);
+  }
+
+  @media(min-width: 601px) {
+    .content {
+      width: calc(100% - 12rem);
+    }
+  }
 `;

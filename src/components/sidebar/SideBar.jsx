@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHeadphonesAlt, faSearch, faHeart, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
 function SideBar() {
   return (
@@ -17,27 +17,27 @@ function SideBar() {
       <div className='menu__content'>
         {/* Single Menu */}
         <div id="#discover" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faCoffee} />
+          <FontAwesomeIcon className='menu__logo' icon={faHeadphonesAlt} />
           <p className='menu__text'>Discover</p>
         </div>
         {/* Single Menu */}
         <div id="#search" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faCoffee} />
+          <FontAwesomeIcon className='menu__logo' icon={faSearch} />
           <p className='menu__text'>Search</p>
         </div>
         {/* Single Menu */}
         <div id="#favourites" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faCoffee} />
+          <FontAwesomeIcon className='menu__logo' icon={faHeart} />
           <p className='menu__text'>Favourites</p>
         </div>
         {/* Single Menu */}
         <div id="#playlists" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faCoffee} />
+          <FontAwesomeIcon className='menu__logo' icon={faPlayCircle} />
           <p className='menu__text'>Playlists</p>
         </div>
         {/* Single Menu */}
         <div id="#charts" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faCoffee} />
+          <FontAwesomeIcon className='menu__logo' icon={faBars} />
           <p className='menu__text'>Charts</p>
         </div>
       </div>
@@ -49,6 +49,7 @@ export default SideBar;
 
 const MenuWrapper = styled.div`
   width: 4rem;
+  min-height: 100vh;
   background-color: #6760dc;
   color: #ffffff;
   display: flex;
@@ -83,7 +84,7 @@ const MenuWrapper = styled.div`
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
     color: #e4e4e4;
     opacity: 0.7;
   }
