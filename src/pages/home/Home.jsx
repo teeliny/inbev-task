@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SideBar from '../../components/sidebar/SideBar';
 import Header from '../../components/header/Header';
+import SingleCategory from '../../components/play-category/SingleCategory';
 
 function Home() {
   return (
@@ -9,6 +10,9 @@ function Home() {
       <SideBar />
       <div className='content'>
         <Header />
+        <div style={{background: '#fff'}}>
+          <SingleCategory />
+        </div>
         <p>InBev React Test</p>
       </div>
     </HomeWrapper>
