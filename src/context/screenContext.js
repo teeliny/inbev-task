@@ -1,10 +1,13 @@
 import React, { createContext, useState, useLayoutEffect } from 'react';
-// import API from '../api/axios';
+import Axios from 'axios';
 
 // Function to monitor window width
 export function useWindowSize() {
   const [width, setWidth] = useState(0);
   const [layout, setLayout] = useState(1);
+
+  const basePath = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
+
 
   useLayoutEffect(() => {
     function updateWidth() {

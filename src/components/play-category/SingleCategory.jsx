@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Pagination from '../../common/pagination/Pagination';
 import { ScreenContext } from '../../context/screenContext';
 
-function SingleCategory({data}) {
+function SingleCategory({data, category}) {
   const { layout: pageSize } = useContext(ScreenContext);
   const [displayData, setDisplayData] = useState([]);
   const [pageIndex, setPageIndex] = useState(1);
@@ -17,7 +17,7 @@ function SingleCategory({data}) {
   return (
     <SingleWrapper pageSize={pageSize}>
       <div className='category__header'>
-        <p className='category__text'>released this week</p>
+        <p className='category__text'>{category}</p>
         <hr className='category__line' />
         <Pagination
           pageIndex={pageIndex}
@@ -52,6 +52,7 @@ export default SingleCategory;
 
 const SingleWrapper = styled.div`
   width: 100%;
+  padding-top: 1rem;
 
   .category__header {
     position: relative;
@@ -59,7 +60,7 @@ const SingleWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
   }
 
   .category__text {
@@ -100,4 +101,3 @@ const SingleWrapper = styled.div`
     }
   }
 `;
-

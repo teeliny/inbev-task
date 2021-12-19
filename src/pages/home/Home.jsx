@@ -23,7 +23,9 @@ function Home() {
       <div className='content'>
         <Header />
         <div style={{background: '#fff'}}>
-          <SingleCategory data={arr} />
+          <SingleCategory data={arr} category={'released this week'} />
+          <SingleCategory data={arr} category={'featured playlists'} />
+          <SingleCategory data={arr} category={'categories'} />
         </div>
         <p>InBev React Test</p>
       </div>
