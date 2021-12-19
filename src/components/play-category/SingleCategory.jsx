@@ -1,68 +1,47 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Pagination from '../../common/pagination/Pagination';
-import featured from '../../mockData/featured-playlist.json';
+import { ScreenContext } from '../../context/screenContext';
 
-function SingleCategory() {
-  const tracks = featured.tracks.data;
-  const arr = tracks.map(item => (
-    {
-      id: item.id,
-      title: item.title,
-      preview: item.preview,
-      img: item.album.cover,
-      small_img: item.album.cover_small,
-    }
-  ));
-  console.log(arr)
+function SingleCategory({data}) {
+  const { layout: pageSize } = useContext(ScreenContext);
+  const [displayData, setDisplayData] = useState([]);
+  const [pageIndex, setPageIndex] = useState(1);
+
+  // Extract the data to display based on page index
+  useEffect(() => {
+    const sectionData = data.slice(pageSize * (pageIndex - 1), pageSize * pageIndex);
+    setDisplayData(sectionData);
+  }, [pageIndex, pageSize, data]);
+
   return (
-    <SingleWrapper>
+    <SingleWrapper pageSize={pageSize}>
       <div className='category__header'>
         <p className='category__text'>released this week</p>
         <hr className='category__line' />
-        <Pagination />
+        <Pagination
+          pageIndex={pageIndex}
+          setPageIndex={setPageIndex}
+          chunks={Math.ceil(data.length / pageSize)}
+        />
       </div>
       <div className='category__content'>
         {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
-        {/* Single content */}
-        <div className='main__content'>
-          <img className='content__img' src={arr[0].img} alt={arr[0].title} />
-          <p className='content__text'>{arr[0].title}</p>
-        </div>
+        {displayData.map(singleTrack => (
+          <div 
+            key={singleTrack.id} 
+            id={singleTrack.id} 
+            className='main__content'
+          >
+            <img 
+              className='content__img' 
+              src={singleTrack.img} 
+              alt={singleTrack.title} 
+            />
+            <p className='content__text'>{singleTrack.title}</p>
+          </div>
+        ))}
+        
       </div>
       
     </SingleWrapper>
@@ -98,18 +77,17 @@ const SingleWrapper = styled.div`
 
   .category__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 1.5rem;
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .main__content {
-    /* width: 70%; */
-    margin: 0 auto;
+    width: ${props => `calc(100% / ${props.pageSize})`};
   }
 
   .content__img {
-    width: 200px;
+    width: 100%;
   }
 
   .content__text {

@@ -1,9 +1,12 @@
+import { ScreenProvider } from './context/screenContext';
 import Home from './pages/home/Home';
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <ScreenProvider>
+      <div className="App">
+        <Home />
+      </div>
+    </ScreenProvider>
   );
 }
 

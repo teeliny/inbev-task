@@ -3,6 +3,18 @@ import styled from 'styled-components';
 import SideBar from '../../components/sidebar/SideBar';
 import Header from '../../components/header/Header';
 import SingleCategory from '../../components/play-category/SingleCategory';
+import featured from '../../mockData/featured-playlist.json';
+
+const tracks = featured.tracks.data;
+  const arr = tracks.map(item => (
+    {
+      id: item.id,
+      title: item.title,
+      preview: item.preview,
+      img: item.album.cover,
+      small_img: item.album.cover_small,
+    }
+  ));
 
 function Home() {
   return (
@@ -11,7 +23,7 @@ function Home() {
       <div className='content'>
         <Header />
         <div style={{background: '#fff'}}>
-          <SingleCategory />
+          <SingleCategory data={arr} />
         </div>
         <p>InBev React Test</p>
       </div>
