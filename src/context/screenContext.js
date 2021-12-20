@@ -38,9 +38,9 @@ const ScreenProvider = ({ children }) => {
   });
   // Make API call and set data to state
   useEffect(() => {
-    const releasesPromise = Axios.get(`${baseURL}/chart/new-releases`);
-    const featuredPromise = Axios.get(`${baseURL}/chart/featured-playlists`);
-    const categoryPromise = Axios.get(`${baseURL}/chart/categories`);
+    const releasesPromise = Axios.get(`${baseURL}/api/chart/new-releases`);
+    const featuredPromise = Axios.get(`${baseURL}/api/chart/featured-playlists`);
+    const categoryPromise = Axios.get(`${baseURL}/api/chart/categories`);
     
     Promise.all([releasesPromise, featuredPromise, categoryPromise])
       .then(data => {
