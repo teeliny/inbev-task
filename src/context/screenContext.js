@@ -37,9 +37,9 @@ const ScreenProvider = ({ children }) => {
   });
   // Make API call and set data to state
   useEffect(() => {
-    const releasesPromise = Axios.get(`https://api.deezer.com/chart/new-releases`);
-    const featuredPromise = Axios.get(`https://api.deezer.com/chart/featured-playlists`);
-    const categoryPromise = Axios.get(`https://api.deezer.com/chart/categories`);
+    const releasesPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/new-releases`);
+    const featuredPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/featured-playlists`);
+    const categoryPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/categories`);
     
     Promise.all([releasesPromise, featuredPromise, categoryPromise])
       .then(data => {
