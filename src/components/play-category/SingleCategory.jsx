@@ -4,7 +4,7 @@ import Pagination from '../../common/pagination/Pagination';
 import { ScreenContext } from '../../context/screenContext';
 
 function SingleCategory({data, category}) {
-  const { layout: pageSize } = useContext(ScreenContext);
+  const { layout: pageSize, handleClickTrack } = useContext(ScreenContext);
   const [displayData, setDisplayData] = useState([]);
   const [pageIndex, setPageIndex] = useState(1);
 
@@ -30,7 +30,8 @@ function SingleCategory({data, category}) {
         {displayData.map(singleTrack => (
           <div 
             key={singleTrack.id} 
-            id={singleTrack.id} 
+            id={singleTrack.id}
+            onClick={() => handleClickTrack(singleTrack.id)}
             className='main__content'
           >
             <img 
@@ -85,6 +86,7 @@ const SingleWrapper = styled.div`
 
   .main__content {
     width: ${props => `calc(100% / ${props.pageSize})`};
+    cursor: pointer;
   }
 
   .content__img {

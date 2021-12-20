@@ -1,34 +1,34 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import SideBar from '../../components/sidebar/SideBar';
 import Header from '../../components/header/Header';
 import SingleCategory from '../../components/play-category/SingleCategory';
-import featured from '../../mockData/featured-playlist.json';
-
-const tracks = featured.tracks.data;
-  const arr = tracks.map(item => (
-    {
-      id: item.id,
-      title: item.title,
-      preview: item.preview,
-      img: item.album.cover,
-      small_img: item.album.cover_small,
-    }
-  ));
-
+import { ScreenContext } from '../../context/screenContext';
+import AudioPlayerComponent from '../../components/player/AudioPlayer';
 function Home() {
+  const { fetchData } = useContext(ScreenContext);
+
   return (
     <HomeWrapper>
       <SideBar />
       <div className='content'>
         <Header />
-        <div style={{background: '#fff'}}>
-          <SingleCategory data={arr} category={'released this week'} />
-          <SingleCategory data={arr} category={'featured playlists'} />
-          <SingleCategory data={arr} category={'categories'} />
+        <div style={{background: '#fff', borderBottomRightRadius: '0.375rem'}}>
+          <SingleCategory
+            data={fetchData.new_releases}
+            category={'released this week'}
+          />
+          <SingleCategory
+            data={fetchData.featured_playlists}
+            category={'featured playlists'}
+          />
+          <SingleCategory
+            data={fetchData.categories}
+            category={'categories'}
+          />
         </div>
-        <p>InBev React Test</p>
       </div>
+      <AudioPlayerComponent />
     </HomeWrapper>
   )
 }

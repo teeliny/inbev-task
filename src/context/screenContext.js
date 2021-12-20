@@ -1,13 +1,13 @@
-import React, { createContext, useState, useLayoutEffect } from 'react';
+import React, { createContext, useState, useLayoutEffect, useEffect } from 'react';
 import Axios from 'axios';
+
+const ScreenContext = createContext();
+const { Provider } = ScreenContext;
 
 // Function to monitor window width
 export function useWindowSize() {
   const [width, setWidth] = useState(0);
   const [layout, setLayout] = useState(1);
-
-  const basePath = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart';
-
 
   useLayoutEffect(() => {
     function updateWidth() {
@@ -27,17 +27,86 @@ export function useWindowSize() {
   return {width, layout};
 }
 
-const ScreenContext = createContext();
-const { Provider } = ScreenContext;
-
 const ScreenProvider = ({ children }) => { 
   const { width, layout } = useWindowSize();
+  // const { currId, setCurrId } = useState(null);
+  const [currSelection, setCurrSelection] = useState(null);
+  const [fetchData, setFetchData] = useState({
+    new_releases: [],
+    featured_playlists: [],
+    categories: [],
+  });
+  // Make API call and set data to state
+  useEffect(() => {
+    const releasesPromise = Axios.get(`chart/new-releases`);
+    const featuredPromise = Axios.get(`chart/featured-playlists`);
+    const categoryPromise = Axios.get(`chart/categories`);
+    
+    Promise.all([releasesPromise, featuredPromise, categoryPromise])
+      .then(data => {
+        const resData = data.map(value => (
+          value.data.tracks.data.map(item => (
+            {
+              id: item.id,
+              title: item.title,
+              preview: item.preview,
+              img: item.album.cover,
+              small_img: item.album.cover_small,
+            }
+          ))
+        ))
+        // Set to state
+        setFetchData({
+          new_releases: resData[0],
+          featured_playlists: resData[1],
+          categories: resData[2],
+        });
+        const { id, title, preview, img, small_img } = resData[0][0];
+        setCurrSelection({
+          id,
+          title,
+          preview,
+          img,
+          small_img,
+        })
+      });
+  }, []);
 
+  // // Get the current id of the track clicked and set data to current selection
+  // useEffect(() => {
+  //   if (currId.length > 0) {
+  //     const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
+  //     const filteredTrack = combinedTracks.find(item => item.id === currId);
+  //     setCurrSelection({
+  //       id: filteredTrack.id,
+  //       title: filteredTrack.title,
+  //       preview: filteredTrack.preview,
+  //       img: filteredTrack.album.cover,
+  //       small_img: filteredTrack.album.cover_small,
+  //     })
+  //   }
+  // }, [currId, fetchData, setCurrSelection]);
+
+  const handleClickTrack = (inputId) => {
+    const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
+    const filteredTrack = combinedTracks.find(item => item.id === inputId);
+    setCurrSelection({
+      id: filteredTrack.id,
+      title: filteredTrack.title,
+      preview: filteredTrack.preview,
+      img: filteredTrack.img,
+      small_img: filteredTrack.small_img,
+    })
+  }
+  // console.log(currSelection)
   return (
     <Provider
       value={{
         width,
-        layout
+        layout,
+        fetchData,
+        currSelection,
+        handleClickTrack,
       }}
     >
       {children}
