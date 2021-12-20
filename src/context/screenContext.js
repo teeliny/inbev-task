@@ -29,7 +29,6 @@ export function useWindowSize() {
 
 const ScreenProvider = ({ children }) => { 
   const { width, layout } = useWindowSize();
-  // const { currId, setCurrId } = useState(null);
   const [currSelection, setCurrSelection] = useState(null);
   const [fetchData, setFetchData] = useState({
     new_releases: [],
@@ -72,21 +71,7 @@ const ScreenProvider = ({ children }) => {
       });
   }, []);
 
-  // // Get the current id of the track clicked and set data to current selection
-  // useEffect(() => {
-  //   if (currId.length > 0) {
-  //     const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
-  //     const filteredTrack = combinedTracks.find(item => item.id === currId);
-  //     setCurrSelection({
-  //       id: filteredTrack.id,
-  //       title: filteredTrack.title,
-  //       preview: filteredTrack.preview,
-  //       img: filteredTrack.album.cover,
-  //       small_img: filteredTrack.album.cover_small,
-  //     })
-  //   }
-  // }, [currId, fetchData, setCurrSelection]);
-
+  // Function that handles click on any of the tracks
   const handleClickTrack = (inputId) => {
     const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
     const filteredTrack = combinedTracks.find(item => item.id === inputId);
