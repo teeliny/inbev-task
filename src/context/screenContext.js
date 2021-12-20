@@ -27,7 +27,8 @@ export function useWindowSize() {
   return {width, layout};
 }
 
-const ScreenProvider = ({ children }) => { 
+const ScreenProvider = ({ children }) => {
+  const baseURL = process.env.REACT_APP_BASE_URL;
   const { width, layout } = useWindowSize();
   const [currSelection, setCurrSelection] = useState(null);
   const [fetchData, setFetchData] = useState({
@@ -37,9 +38,9 @@ const ScreenProvider = ({ children }) => {
   });
   // Make API call and set data to state
   useEffect(() => {
-    const releasesPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/new-releases`);
-    const featuredPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/featured-playlists`);
-    const categoryPromise = Axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/categories`);
+    const releasesPromise = Axios.get(`${baseURL}/chart/new-releases`);
+    const featuredPromise = Axios.get(`${baseURL}/chart/featured-playlists`);
+    const categoryPromise = Axios.get(`${baseURL}/chart/categories`);
     
     Promise.all([releasesPromise, featuredPromise, categoryPromise])
       .then(data => {
@@ -67,23 +68,24 @@ const ScreenProvider = ({ children }) => {
           preview,
           img,
           small_img,
-        })
+        });
       });
-  }, []);
+  }, [baseURL]);
 
   // Function that handles click on any of the tracks
   const handleClickTrack = (inputId) => {
     const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
     const filteredTrack = combinedTracks.find(item => item.id === inputId);
+    const { id, title, preview, img, small_img } = filteredTrack;
     setCurrSelection({
-      id: filteredTrack.id,
-      title: filteredTrack.title,
-      preview: filteredTrack.preview,
-      img: filteredTrack.img,
-      small_img: filteredTrack.small_img,
-    })
+      id,
+      title,
+      preview,
+      img,
+      small_img,
+    });
   }
-  // console.log(currSelection)
+  console.log(baseURL);
   return (
     <Provider
       value={{
