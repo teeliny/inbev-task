@@ -14,6 +14,6 @@ beforeAll(() => {
 
 test('renders learn react link', () => {
   render(<AppWrapper />);
-  const linkElement = screen.getByText(/InBev/i);
+  const linkElement = screen.getByText(/play/i);
   expect(linkElement).toBeInTheDocument();
 });
