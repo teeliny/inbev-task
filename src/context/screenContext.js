@@ -30,6 +30,8 @@ export function useWindowSize() {
 const ScreenProvider = ({ children }) => {
   const baseURL = process.env.REACT_APP_BASE_URL;
   const { width, layout } = useWindowSize();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [currSelection, setCurrSelection] = useState(null);
   const [fetchData, setFetchData] = useState({
     new_releases: [],
@@ -38,6 +40,7 @@ const ScreenProvider = ({ children }) => {
   });
   // Make API call and set data to state
   useEffect(() => {
+    setLoading(true);
     const releasesPromise = Axios.get(`${baseURL}/api/chart/new-releases`);
     const featuredPromise = Axios.get(`${baseURL}/api/chart/featured-playlists`);
     const categoryPromise = Axios.get(`${baseURL}/api/chart/categories`);
@@ -69,6 +72,11 @@ const ScreenProvider = ({ children }) => {
           img,
           small_img,
         });
+        setLoading(false);
+      })
+      .catch(_err => {
+        setLoading(false);
+        setError(true);
       });
   }, [baseURL]);
 
@@ -85,12 +93,14 @@ const ScreenProvider = ({ children }) => {
       small_img,
     });
   }
-  console.log(baseURL);
+
   return (
     <Provider
       value={{
         width,
         layout,
+        loading,
+        error,
         fetchData,
         currSelection,
         handleClickTrack,
