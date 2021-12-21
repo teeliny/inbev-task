@@ -36,13 +36,15 @@ function SingleCategory({data, category}) {
           >
             <img 
               className='content__img' 
-              src={singleTrack.img} 
+              src={singleTrack.img ? singleTrack.img : singleTrack.small_img} 
               alt={singleTrack.title} 
             />
             <p className='content__text'>{singleTrack.title}</p>
+            {singleTrack.preview.length === 0 &&
+              <p className='track__error'>Audio file not provided</p>
+            }
           </div>
         ))}
-        
       </div>
       
     </SingleWrapper>
@@ -87,6 +89,7 @@ const SingleWrapper = styled.div`
   .main__content {
     width: ${props => `calc(100% / ${props.pageSize})`};
     cursor: pointer;
+    position: relative;
   }
 
   .content__img {
@@ -95,6 +98,17 @@ const SingleWrapper = styled.div`
 
   .content__text {
     text-align: center;
+  }
+
+  .track__error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem 0;
   }
 
   @media(min-width: 601px) {

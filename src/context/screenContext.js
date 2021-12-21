@@ -85,13 +85,15 @@ const ScreenProvider = ({ children }) => {
     const combinedTracks = [...fetchData.new_releases, ...fetchData.featured_playlists, ...fetchData.categories];
     const filteredTrack = combinedTracks.find(item => item.id === inputId);
     const { id, title, preview, img, small_img } = filteredTrack;
-    setCurrSelection({
-      id,
-      title,
-      preview,
-      img,
-      small_img,
-    });
+    if (preview.length > 0) {
+      setCurrSelection({
+        id,
+        title,
+        preview,
+        img,
+        small_img,
+      });
+    }
   }
 
   return (
