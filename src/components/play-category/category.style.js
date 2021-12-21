@@ -49,10 +49,11 @@ export const SingleWrapper = styled.div`
 
   .track__error {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     width: 100%;
     text-align: center;
+    font-size: 0.7rem;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 1);
     padding: 1rem 0;

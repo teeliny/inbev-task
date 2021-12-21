@@ -14,11 +14,11 @@ export function useWindowSize() {
       const currWidth = window.innerWidth;
       setWidth(window.innerWidth);
       if (currWidth <= 375) setLayout(1)
-      if (375 < currWidth && currWidth <= 768) setLayout(2)
-      if (768 < currWidth && currWidth <= 1024) setLayout(3)
-      if (1024 < currWidth && currWidth <= 1536) setLayout(4)
-      if (1536 < currWidth && currWidth <= 2048) setLayout(5)
-      if (currWidth > 2048) setLayout(6)
+      if (375 < currWidth && currWidth <= 768) setLayout(3)
+      if (768 < currWidth && currWidth <= 1024) setLayout(6)
+      if (1024 < currWidth && currWidth <= 1536) setLayout(8)
+      if (1536 < currWidth && currWidth <= 2048) setLayout(10)
+      if (currWidth > 2048) setLayout(12)
     }
     window.addEventListener('resize', updateWidth);
     updateWidth();
