@@ -30,7 +30,8 @@ Put your knowledge of:
 
 ### Screenshot
 
-![screenshot](./deezer-desktop.jpg)
+![Desktop view](./deezer-desktop.jpg)
+![Mobile view](./deezer-mobile.jpg)
 
 ### Links
 
