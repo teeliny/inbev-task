@@ -25,20 +25,23 @@ function Home() {
           <Header />
           <div className='group__container'>
             <SingleCategory
+              id={'discover'}
               data={fetchData.new_releases}
               category={'released this week'}
             />
             <SingleCategory
+              id={'search'}
               data={fetchData.featured_playlists}
               category={'featured playlists'}
             />
             <SingleCategory
+              id={'charts'}
               data={fetchData.categories}
               category={'categories'}
             />
           </div>
         </div>
-        <AudioPlayerComponent />
+        <AudioPlayerComponent id={'playlists'} />
       </HomeWrapper>)}
     </>
   )

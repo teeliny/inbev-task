@@ -4,11 +4,11 @@ import 'react-h5-audio-player/lib/styles.css';
 import { ScreenContext } from '../../context/screenContext';
 import { AudioWrapper } from './player.style';
 
-function AudioPlayerComponent() {
+function AudioPlayerComponent({id}) {
   const { currSelection } = useContext(ScreenContext);
 
   return (
-    <AudioWrapper>
+    <AudioWrapper id={id}>
       <AudioPlayer
         autoPlay={false}
         src={currSelection?.preview}

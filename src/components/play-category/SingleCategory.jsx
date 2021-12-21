@@ -3,7 +3,7 @@ import { SingleWrapper } from './category.style';
 import Pagination from '../../common/pagination/Pagination';
 import { ScreenContext } from '../../context/screenContext';
 
-function SingleCategory({data, category}) {
+function SingleCategory({data, category, id}) {
   const { layout: pageSize, handleClickTrack } = useContext(ScreenContext);
   const [displayData, setDisplayData] = useState([]);
   const [pageIndex, setPageIndex] = useState(1);
@@ -17,7 +17,7 @@ function SingleCategory({data, category}) {
   }, [pageIndex, pageSize, data]);
 
   return (
-    <SingleWrapper pageSize={pageSize}>
+    <SingleWrapper pageSize={pageSize} id={id}>
       <div className='category__header'>
         <p className='category__text'>{category}</p>
         <hr className='category__line' />

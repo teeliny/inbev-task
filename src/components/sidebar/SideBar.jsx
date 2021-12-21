@@ -16,30 +16,30 @@ function SideBar() {
       </div>
       <div className='menu__content'>
         {/* Single Menu */}
-        <div id="#discover" className='single__menu'>
+        <a href="#discover" className='single__menu'>
           <FontAwesomeIcon className='menu__logo' icon={faHeadphonesAlt} />
           <p className='menu__text'>Discover</p>
-        </div>
+        </a>
         {/* Single Menu */}
-        <div id="#search" className='single__menu'>
+        <a href="#search" className='single__menu'>
           <FontAwesomeIcon className='menu__logo' icon={faSearch} />
           <p className='menu__text'>Search</p>
-        </div>
+        </a>
         {/* Single Menu */}
-        <div id="#favourites" className='single__menu'>
+        <a href="#discover" className='single__menu'>
           <FontAwesomeIcon className='menu__logo' icon={faHeart} />
           <p className='menu__text'>Favourites</p>
-        </div>
+        </a>
         {/* Single Menu */}
-        <div id="#playlists" className='single__menu'>
+        <a href="#playlists" className='single__menu'>
           <FontAwesomeIcon className='menu__logo' icon={faPlayCircle} />
           <p className='menu__text'>Playlists</p>
-        </div>
+        </a>
         {/* Single Menu */}
-        <div id="#charts" className='single__menu'>
-          <FontAwesomeIcon className='menu__logo' icon={faBars} />
-          <p className='menu__text'>Charts</p>
-        </div>
+        <a href="#charts" className='single__menu'>
+            <FontAwesomeIcon className='menu__logo' icon={faBars} />
+            <p className='menu__text'>Charts</p>
+        </a>
       </div>
     </MenuWrapper>
   )

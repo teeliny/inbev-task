@@ -40,6 +40,7 @@ export const MenuWrapper = styled.div`
     padding: 1rem 1rem;
     color: #e4e4e4;
     opacity: 0.7;
+    text-decoration: none;
   }
 
   .menu__logo {
