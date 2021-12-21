@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# INBEV react test solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the frontend challenge
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app is a front end app that was built with React Library and styled component. It involves the knowledge of API consumption.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Put your knowledge of:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- APIs consumption and responses handling to test
+- state management and making efficient multiple API calls to test
+- playing/pausing a music irrespective of the section the music is
+- layout optimization for different device's screen size
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![screenshot](./deezer-desktop.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Live Site URL: [https://inbev-test.herokuapp.com/](https://inbev-test.herokuapp.com/)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Setup up the repo using create-react-app(Javascript template)
+- Created components, commons and pages folder
+- Created pagination in commons, error, loading, header, sidebar, player and single category in components and home in pages
+- Created a context file for state management where screen size is monitored and APIs are fetched
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Used Promise.all to fetch the data from /new-releases, /featured_playlists and /categories since the three records are used simultaneously
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Had to set handle responses using setLoading and setError in the context
+- Added function that handles audio selection in context
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+- [Font Awesome](https://fontawesome.com/) - For icons
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I learnt how to use font awesome for spinner
+- I learnt how to manage state with context API
 
-### Code Splitting
+```js
+<div>
+  <FontAwesomeIcon icon={faSpinner} spin />
+</div>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Continued development
 
-### Analyzing the Bundle Size
+- Keep using font awesome for some basic icons
+- Keep learning context API along with redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Useful resources
 
-### Making a Progressive Web App
+- [useLayoutEffect hooks](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) - This helped me monitor screen size. I really liked this pattern and will use it going forward.
+- [Font awesome icon animation](https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/animating-icons) - This is expose me to how to font awesome animation. It helps to prevent the use of extra package for spinner or lot of lines of css code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [LinkedIn Profile](https://linkedin.com/in/teeliny)
