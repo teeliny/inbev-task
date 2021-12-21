@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import { ScreenContext } from '../../context/screenContext';
-import styled from 'styled-components';
+import { AudioWrapper } from './player.style';
 
 function AudioPlayerComponent() {
   const { currSelection } = useContext(ScreenContext);
@@ -18,9 +18,3 @@ function AudioPlayerComponent() {
 }
 
 export default AudioPlayerComponent;
-
-const AudioWrapper = styled.div`
-  position: fixed; 
-  bottom: 0;
-  width: calc(100% - 2rem);
-`;

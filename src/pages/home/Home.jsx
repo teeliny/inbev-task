@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import styled from 'styled-components';
 import SideBar from '../../components/sidebar/SideBar';
 import Header from '../../components/header/Header';
 import LoadingComponent from '../../components/loading/LoadingComponent';
@@ -7,6 +6,7 @@ import ErrorComponent from '../../components/error/ErrorComponent';
 import SingleCategory from '../../components/play-category/SingleCategory';
 import { ScreenContext } from '../../context/screenContext';
 import AudioPlayerComponent from '../../components/player/AudioPlayer';
+import { HomeWrapper } from './home.style';
 
 function Home() {
   const { fetchData, loading, error } = useContext(ScreenContext);
@@ -45,22 +45,3 @@ function Home() {
 }
 
 export default Home;
-
-const HomeWrapper = styled.div`
-  display: flex;
-
-  .content {
-    width: calc(100% - 4rem);
-  }
-
-  .group__container {
-    background: '#fff';
-    border-bottom-right-radius: '0.375rem';
-  }
-
-  @media(min-width: 601px) {
-    .content {
-      width: calc(100% - 12rem);
-    }
-  }
-`;
