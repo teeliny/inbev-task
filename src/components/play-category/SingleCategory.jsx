@@ -8,6 +8,7 @@ function SingleCategory({data, category}) {
   const [displayData, setDisplayData] = useState([]);
   const [pageIndex, setPageIndex] = useState(1);
   const [isHover, setIsHover] = useState(false);
+  const [hoverId, setHoverId] = useState('');
 
   // Extract the data to display based on page index
   useEffect(() => {
@@ -32,8 +33,14 @@ function SingleCategory({data, category}) {
           <div 
             key={singleTrack.id} 
             id={singleTrack.id}
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
+            onMouseEnter={() => {
+              setHoverId(singleTrack.id);
+              setIsHover(true)
+            }}
+            onMouseLeave={() => {
+              setHoverId(singleTrack.id);
+              setIsHover(false)
+            }}
             onClick={() => handleClickTrack(singleTrack.id)}
             className='main__content'
           >
@@ -43,7 +50,7 @@ function SingleCategory({data, category}) {
               alt={singleTrack.title} 
             />
             <p className='content__text'>{singleTrack.title}</p>
-            {isHover && singleTrack.preview.length === 0 &&
+            {hoverId === singleTrack.id && isHover && singleTrack.preview.length === 0 &&
               <p className='track__error'>Audio file not provided</p>
             }
           </div>
