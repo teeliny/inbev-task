@@ -6,7 +6,7 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://api.deezer.com',
       changeOrigin: true,
-      pathRewrite: {"^/api": ""}
+      pathRewrite: {"^/api": "/"}
     })
   );
 };
