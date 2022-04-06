@@ -41,9 +41,9 @@ const ScreenProvider = ({ children }) => {
   // Make API call and set data to state
   useEffect(() => {
     setLoading(true);
-    const releasesPromise = Axios.get(`api/chart/new-releases`);
-    const featuredPromise = Axios.get(`api/chart/featured-playlists`);
-    const categoryPromise = Axios.get(`api/chart/categories`);
+    const releasesPromise = Axios.get(`https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/new-releases`);
+    const featuredPromise = Axios.get(`https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/featured-playlists`);
+    const categoryPromise = Axios.get(`https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/categories`);
     
     Promise.all([releasesPromise, featuredPromise, categoryPromise])
       .then(data => {
